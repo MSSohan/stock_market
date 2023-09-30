@@ -1,7 +1,7 @@
-import 'package:estock/blocs/delegate.dart';
-import 'package:estock/blocs/details/details_bloc.dart';
-import 'package:estock/blocs/load/load_bloc.dart';
-import 'package:estock/views/widgets/widgets.dart';
+import 'package:stock_market/blocs/delegate.dart';
+import 'package:stock_market/blocs/details/details_bloc.dart';
+import 'package:stock_market/blocs/load/load_bloc.dart';
+import 'package:stock_market/views/widgets/widgets.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
