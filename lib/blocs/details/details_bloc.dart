@@ -7,6 +7,8 @@ part 'details_event.dart';
 part 'details_state.dart';
 
 class DetailsBloc extends Bloc<DetailsEvent, DetailsState> {
+  DetailsBloc(super.initialState);
+
   @override
   Stream<DetailsState> mapEventToState(
     DetailsEvent event,

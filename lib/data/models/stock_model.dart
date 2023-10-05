@@ -5,5 +5,6 @@ class StockModel {
   final String low;
   final int index;
 
-  StockModel({this.index, this.tradeCode, this.volume, this.high, this.low});
+  StockModel({required this.index, required this.tradeCode,
+    required this.volume, required this.high, required this.low});
 }

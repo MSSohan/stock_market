@@ -18,7 +18,7 @@ class LoadSuccessEvent extends LoadEvent {
   final List<dynamic> jsonResponse;
   final List<String> tradeCodes;
 
-  LoadSuccessEvent(this.jsonResponse, {this.tradeCodes});
+  LoadSuccessEvent(this.jsonResponse, {required this.tradeCodes});
   @override
   List<Object> get props => [jsonResponse, tradeCodes];
 }

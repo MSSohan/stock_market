@@ -1,6 +1,6 @@
-import 'package:estock/blocs/load/load_bloc.dart';
-import 'package:estock/views/pages/stock_details_page.dart';
-import 'package:estock/views/widgets/widgets.dart';
+import 'package:stock_market/blocs/load/load_bloc.dart';
+import 'package:stock_market/views/pages/stock_details_page.dart';
+import 'package:stock_market/views/widgets/widgets.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:fl_chart/fl_chart.dart';
@@ -8,7 +8,7 @@ import 'package:flutter/material.dart';
 
 // ignore: must_be_immutable
 class HomePage extends StatelessWidget {
-  List<String> data;
+  late List<String> data;
 
   onStockItemPressed(BuildContext context) {
     Navigator.push(

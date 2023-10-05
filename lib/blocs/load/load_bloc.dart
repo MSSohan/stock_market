@@ -1,12 +1,14 @@
 import 'dart:async';
 import 'package:bloc/bloc.dart';
 import 'package:equatable/equatable.dart';
-import 'package:estock/data/models/stock_model.dart';
+import 'package:stock_market/data/models/stock_model.dart';
 part 'load_event.dart';
 
 part 'load_state.dart';
 
 class LoadBloc extends Bloc<LoadEvent, LoadState> {
+  LoadBloc(super.initialState);
+
   @override
   Stream<LoadState> mapEventToState(
     LoadEvent event,
@@ -16,7 +18,7 @@ class LoadBloc extends Bloc<LoadEvent, LoadState> {
         yield LoadInProgressState();
         break;
       case LoadSuccessEvent:
-        yield* _mapLoadSuccessEventToState(event);
+        yield* _mapLoadSuccessEventToSimport 'dart:async';tate(event);
         break;
     }
   }
@@ -25,6 +27,6 @@ class LoadBloc extends Bloc<LoadEvent, LoadState> {
   LoadState get initialState => LoadInitialState();
 
   Stream<LoadState> _mapLoadSuccessEventToState(LoadSuccessEvent event) async* {
-    yield LoadSuccessState(event.jsonResponse);
+    yield LoadSuccessState(event.jsonResponse, tradeCodes: []);
   }
 }

@@ -1,6 +1,6 @@
-import 'package:estock/blocs/load/load_bloc.dart';
-import 'package:estock/data/repositories/data_repository.dart';
-import 'package:estock/views/pages/home_page.dart';
+import 'package:stock_market/blocs/load/load_bloc.dart';
+import 'package:stock_market/data/repositories/data_repository.dart';
+import 'package:stock_market/views/pages/home_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
